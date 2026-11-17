@@ -1,0 +1,53 @@
+=== ESCENARIO 1 ===
+=== COMBATE ===
+Guerrero demo (Guerrero) + Espada + Armadura | HP 120/120 ATK 32 DEF 20 VEL 12
+Goblin (Goblin) | HP 60/60 ATK 16 DEF 5 VEL 14
+Ronda 1 | Goblin -> Guerrero demo | Punalada | Guerrero demo HP 120 -> 116 | daño=4 curación=0
+Ronda 1 | Guerrero demo -> Goblin | Espada | Goblin HP 60 -> 33 | daño=27 curación=0
+Ronda 2 | Goblin -> Guerrero demo | Punalada | Guerrero demo HP 116 -> 112 | daño=4 curación=0
+Ronda 2 | Guerrero demo -> Goblin | Espada | Goblin HP 33 -> 6 | daño=27 curación=0
+Ronda 3 | Goblin -> Guerrero demo | Punalada | Guerrero demo HP 112 -> 108 | daño=4 curación=0
+Ronda 3 | Guerrero demo -> Goblin | Espada | Goblin HP 6 -> 0 | daño=6 curación=0
+Resultado: Guerrero demo | HP Guerrero demo=108, Goblin=0
+Estadísticas: 3 rondas; críticos y resistencia elemental: no utilizados.
+=== ESCENARIO 2 ===
+=== COMBATE ===
+Mago demo (Mago) + Espada + Veneno + Bendicion | HP 103/103 ATK 47 DEF 6 VEL 17
+Orco (Orco) | HP 130/130 ATK 25 DEF 10 VEL 9
+Ronda 1 | Mago demo -> Orco | Hechizo + veneno | Orco HP 130 -> 82 | daño=48 curación=0
+Ronda 1 | Mago demo -> Orco | veneno renovado: 3 turnos
+Ronda 1 | Orco -> Mago demo | veneno | Orco HP 82 -> 78 | daño=4 curación=0
+Ronda 1 | Orco -> Mago demo | Espada | Mago demo HP 103 -> 84 | daño=19 curación=0
+Ronda 2 | Mago demo -> Orco | Hechizo + veneno | Orco HP 78 -> 30 | daño=48 curación=0
+Ronda 2 | Mago demo -> Orco | veneno renovado: 3 turnos
+Ronda 2 | Orco -> Mago demo | veneno | Orco HP 30 -> 26 | daño=4 curación=0
+Ronda 2 | Orco -> Mago demo | Espada | Mago demo HP 84 -> 65 | daño=19 curación=0
+Ronda 3 | Mago demo -> Orco | Hechizo + veneno | Orco HP 26 -> 0 | daño=26 curación=0
+Resultado: Mago demo | HP Mago demo=65, Orco=0
+Estadísticas: 3 rondas; críticos y resistencia elemental: no utilizados.
+=== ESCENARIO 3 ===
+=== COMBATE ===
+Arquero demo (Arquero) + Armadura + AmuletoRegeneracion + Veneno | HP 100/100 ATK 28 DEF 19 VEL 20
+Dragon (Dragon) | HP 220/220 ATK 32 DEF 16 VEL 18
+Ronda 1 | Arquero demo -> Dragon | regeneración | Arquero demo HP 100 -> 100 | daño=0 curación=0
+Ronda 1 | Arquero demo -> Dragon | Flecha + veneno | Dragon HP 220 -> 202 | daño=18 curación=0
+Ronda 1 | Arquero demo -> Dragon | veneno renovado: 3 turnos
+Ronda 1 | Dragon -> Arquero demo | veneno | Dragon HP 202 -> 198 | daño=4 curación=0
+Ronda 1 | Dragon -> Arquero demo | Hechizo | Arquero demo HP 100 -> 71 | daño=29 curación=0
+Ronda 2 | Arquero demo -> Dragon | regeneración | Arquero demo HP 71 -> 73 | daño=0 curación=2
+Ronda 2 | Arquero demo -> Dragon | Flecha + veneno | Dragon HP 198 -> 180 | daño=18 curación=0
+Ronda 2 | Arquero demo -> Dragon | veneno renovado: 3 turnos
+Ronda 2 | Dragon -> Arquero demo | veneno | Dragon HP 180 -> 176 | daño=4 curación=0
+Ronda 2 | Dragon -> Arquero demo | Hechizo | Arquero demo HP 73 -> 44 | daño=29 curación=0
+Ronda 3 | Arquero demo -> Dragon | regeneración | Arquero demo HP 44 -> 46 | daño=0 curación=2
+Ronda 3 | Arquero demo -> Dragon | Flecha + veneno | Dragon HP 176 -> 158 | daño=18 curación=0
+Ronda 3 | Arquero demo -> Dragon | veneno renovado: 3 turnos
+Ronda 3 | Dragon -> Arquero demo | veneno | Dragon HP 158 -> 154 | daño=4 curación=0
+Ronda 3 | Dragon -> Arquero demo | Hechizo | Arquero demo HP 46 -> 17 | daño=29 curación=0
+Ronda 4 | Arquero demo -> Dragon | regeneración | Arquero demo HP 17 -> 19 | daño=0 curación=2
+Ronda 4 | Arquero demo -> Dragon | Flecha + veneno | Dragon HP 154 -> 136 | daño=18 curación=0
+Ronda 4 | Arquero demo -> Dragon | veneno renovado: 3 turnos
+Ronda 4 | Dragon -> Arquero demo | veneno | Dragon HP 136 -> 132 | daño=4 curación=0
+Ronda 4 | Dragon -> Arquero demo | Hechizo | Arquero demo HP 19 -> 0 | daño=19 curación=0
+Resultado: Dragon | HP Arquero demo=0, Dragon=132
+Estadísticas: 4 rondas; críticos y resistencia elemental: no utilizados.
