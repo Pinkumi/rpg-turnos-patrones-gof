@@ -66,6 +66,20 @@ class JuegoTest {
   assertEquals("Empate",r.ganador());assertEquals(5,r.rondas());
   assertEquals(2,r.bitacora().stream().filter(s->s.contains("sin pociones")).count());
  }
+ @Test void defensaReduceUnaVez(){
+  var p=new CreadorArquero().crearPersonaje("A");var o=objetivo();
+  o.setEstrategia((a,b)->new ResultadoAtaque(9,"golpe",0));
+  new MotorCombate(1,false).iniciarCombate(p,o,a->MotorCombate.Accion.DEFENDER,s->{});
+  assertEquals(95,p.getHp());
+ }
+ @Test void muertePorVenenoImpideRegeneracionYAccion(){
+  var p=new VenenoDecorator(new CreadorArquero().crearPersonaje("A"));
+  p.setEstrategia((a,b)->new ResultadoAtaque(0,"marca",0));
+  var o=new AmuletoRegeneracionDecorator(objetivo());o.setHp(4);
+  o.setEstrategia((a,b)->{fail("Muerto por veneno no ataca");return null;});
+  new MotorCombate().iniciarCombate(p,o,a->MotorCombate.Accion.ATACAR,s->{});
+  assertEquals(0,o.getHp());assertEquals(100,p.getHp());
+ }
  @Test void integracionYReproducibilidad(){
   List<String> a=new ArrayList<>(),b=new ArrayList<>();Main.demo(a::add);Main.demo(b::add);
   assertEquals(a,b);assertEquals(3,a.stream().filter(s->s.startsWith("Resultado:")).count());
